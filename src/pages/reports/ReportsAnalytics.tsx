@@ -70,7 +70,7 @@ export default function ReportsAnalytics() {
       <div className='mt-6 grid gap-6 lg:grid-cols-2'>
         <Card><CardHeader><CardTitle>Complaints by Status</CardTitle><CardDescription>Current distribution</CardDescription></CardHeader><CardContent>
           <dl className='grid grid-cols-2 gap-3'>
-            {([['Pending',stats.pending,'text-amber-600'],['Assigned',stats.assigned,'text-blue-600'],['In Progress',stats.inProgress,'text-indigo-600'],['Resolved',stats.resolved,'text-green-600'],['Overdue',stats.overdue,'text-red-600'],['Critical',stats.critical,'text-orange-600']] as [string,number,string][]).map(([label,val,cls])=>(<div key={label} className='rounded-lg bg-gray-50 dark:bg-gray-800 p-3'><dt className='text-sm text-gray-500'>{label}</dt><dd className={`mt-1 text-2xl font-bold `}>{val}</dd></div>))}
+            {([['Pending',stats.pending,'text-amber-600'],['Assigned',stats.assigned,'text-blue-600'],['In Progress',stats.inProgress,'text-indigo-600'],['Resolved',stats.resolved,'text-green-600'],['Overdue',stats.overdue,'text-red-600'],['Critical',stats.critical,'text-orange-600']] as [string,number,string][]).map(([label,val])=>(<div key={label} className='rounded-lg bg-gray-50 dark:bg-gray-800 p-3'><dt className='text-sm text-gray-500'>{label}</dt><dd className={`mt-1 text-2xl font-bold `}>{val}</dd></div>))}
           </dl>
         </CardContent></Card>
         <Card><CardHeader><CardTitle>Complaints by Category</CardTitle><CardDescription>All-time breakdown</CardDescription></CardHeader><CardContent>
