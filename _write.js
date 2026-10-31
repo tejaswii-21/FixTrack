@@ -1,0 +1,1 @@
+﻿const fs=require("fs"),path=require("path"),base="c:/Users/RAMESH/OneDrive/Documents/FixTrack";function w(p,c){const f=path.join(base,p);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,c,"utf8");console.log("OK",p,fs.statSync(f).size+"b");}console.log("write script ready");

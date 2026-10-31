@@ -1,0 +1,776 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Initialize Vite + React + TypeScript + Tailwind CSS project": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841038361
+      },
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841081260
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792843701552
+      }
+    ],
+    "1.2 Install dependencies (React Router, Lucide React, Recharts, React Hook Form, Zod, Sonner, date-fns, @supabase/supabase-js)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841039010
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792843710960
+      }
+    ],
+    "1.3 Initialize shadcn/ui and add base components (Button, Card, Dialog, Table, Badge, Input, Select, Label, DropdownMenu, Skeleton)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841039234
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792843723441
+      }
+    ],
+    "1.4 Configure Supabase client in `lib/supabase.ts` with environment validation and create `.env.example`": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841039598
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844034604
+      }
+    ],
+    "1.5 Define TypeScript types in `types/database.types.ts` and `types/index.ts` matching the database schema": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841039774
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844038635
+      }
+    ],
+    "1.6 Create utility functions in `lib/utils.ts` (`cn` helper, date formatting with date-fns, basic CSV escaping)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040060
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844047712
+      }
+    ],
+    "1.7 Create Zod validation schemas in `lib/validation.ts`": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040218
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844056480
+      }
+    ],
+    "1.8 Create ThemeContext with dark mode toggle": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040382
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844060371
+      }
+    ],
+    "1.9 Create AppLayout with collapsible sidebar and top navigation": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040557
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844067767
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847584976
+      }
+    ],
+    "1.10 Implement role-based sidebar navigation with role filtering": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040740
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847610647
+      }
+    ],
+    "1.11 Create ProtectedRoute and RoleGuard components (with a minimal placeholder AuthContext)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841040917
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844073944
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847589922
+      }
+    ],
+    "1.12 Define all routes in `routes/index.tsx` and create Access Denied + custom 404 pages": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841041081
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847663649
+      }
+    ],
+    "1.13 Create loading, empty, and error state components": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841041294
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844078102
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847594386
+      }
+    ],
+    "1.14 Create shared domain components (StatusBadge, PriorityBadge, StatCard)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841041580
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792844087308
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847606207
+      }
+    ],
+    "1.15 Create auth page shells (Login, Register, ForgotPassword, ResetPassword)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841041825
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847614875
+      }
+    ],
+    "1.16 Create dashboard page shells (Administrator, Resident, Maintenance Staff)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841042055
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847628018
+      }
+    ],
+    "1.17 Create complaint page shells (SubmitComplaint, MyComplaints, AllComplaints, ComplaintDetails)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841042279
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847640399
+      }
+    ],
+    "1.18 Create admin/maintenance page shells (AssignedToMe, Categories, MaintenanceTeam, ReportsAnalytics)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841042463
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847653316
+      }
+    ],
+    "1.19 Create user page shells (Notifications, Profile, Settings)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841042669
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847658787
+      }
+    ],
+    "Checkpoint — Phase 1: Ensure `tsc --noEmit` and `vite build` pass and sidebar navigation reaches every page. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841042829
+      }
+    ],
+    "2.1 Create migration for `profiles` (with auto-create-on-signup trigger and `updated_at` trigger function) and `maintenance_staff` tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841043026
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847679657
+      },
+      {
+        "executionId": "c7a298d0-ac9e-4a09-a1b3-fcdb12c7aeb6",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1793027275392
+      }
+    ],
+    "2.2 Create migration for `complaint_categories` (with default seed) and `complaints` (with complaint number sequence, generate trigger, and due_at calculation)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841043408
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847684945
+      }
+    ],
+    "2.3 Create migration for `complaint_attachments` and `complaint_comments` tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841043561
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792847991916
+      }
+    ],
+    "2.4 Create migration for `complaint_status_history` (with status-change trigger) and `complaint_assignments` tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841043735
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792848004425
+      }
+    ],
+    "2.5 Create migration for `notifications` and `complaint_feedback` tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841043916
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792848008550
+      }
+    ],
+    "2.6 Create migration for `system_settings` (with default SLA targets seed) and `audit_logs` tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841044081
+      },
+      {
+        "executionId": "e3c097bf-55d6-4a9a-9452-39496e4e68ca",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792848013066
+      }
+    ],
+    "2.7 Implement `get_user_role()` helper and RLS policies for all protected tables": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841044275
+      }
+    ],
+    "2.8 Configure private Supabase Storage bucket and storage policies for attachments": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841044446
+      }
+    ],
+    "2.9 Create development seed data in `supabase/seed.sql`": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841044747
+      }
+    ],
+    "2.10 Implement AuthContext with Supabase session management (replace the placeholder)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841044918
+      }
+    ],
+    "2.11 Implement auth service module (`auth.service.ts`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045066
+      }
+    ],
+    "2.12 Wire Registration and Login pages to Supabase": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045235
+      }
+    ],
+    "2.13 Implement Forgot Password, Reset Password, Logout, and profile menu": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045383
+      }
+    ],
+    "2.14 Document first administrator provisioning (SQL statement and README section)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045540
+      }
+    ],
+    "Checkpoint — Phase 2: Ensure migrations apply, RLS is enabled, and auth flows (register, login, logout) work. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045696
+      }
+    ],
+    "3.1 Create complaints service module (`complaints.service.ts`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045846
+      }
+    ],
+    "3.2 Implement search, filters, sorting, and pagination in the complaints service": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841045992
+      }
+    ],
+    "3.3 Build Submit Complaint form with React Hook Form and Zod validation": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841046155
+      }
+    ],
+    "3.4 Implement image upload component with preview and validation": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841046346
+      }
+    ],
+    "3.5 Wire complaint submission to database persistence": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841046618
+      }
+    ],
+    "3.6 Implement duplicate submission prevention": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841046747
+      }
+    ],
+    "3.7 Build My Complaints page for residents": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841046880
+      }
+    ],
+    "3.8 Implement StatusTimeline component": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047012
+      }
+    ],
+    "3.9 Implement public comments": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047145
+      }
+    ],
+    "3.10 Implement internal notes": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047306
+      }
+    ],
+    "3.11 Implement status transition Edge Function (`update-complaint-status`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047441
+      }
+    ],
+    "3.12 Build All Complaints page for administrators": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047574
+      }
+    ],
+    "3.13 Build Complaint Details page": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047696
+      }
+    ],
+    "Checkpoint — Phase 3: Ensure complaint submission, lists, details, comments, and status transitions work. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841047873
+      }
+    ],
+    "4.1 Create assignments service module (`assignments.service.ts`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841048066
+      }
+    ],
+    "4.2 Build Assignment panel component": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841048199
+      }
+    ],
+    "4.3 Implement assignment Edge Function (`assign-complaint`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841048468
+      }
+    ],
+    "4.4 Wire assign and reassign into the Complaint Details page": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841048662
+      }
+    ],
+    "4.5 Build Assigned to Me page for maintenance staff": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841048844
+      }
+    ],
+    "4.6 Build Maintenance Team management page for administrators": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841049036
+      }
+    ],
+    "4.7 Implement staff start-work and resolution actions": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841049373
+      }
+    ],
+    "4.8 Implement resident resolution confirmation and reopening request": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841049525
+      }
+    ],
+    "Checkpoint — Phase 4: Ensure assign/reassign, staff work updates, resolution, confirmation, and reopening work. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841049719
+      }
+    ],
+    "5.1 Implement overdue detection query (on-demand, server-side)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841049875
+      }
+    ],
+    "5.2 Create notifications service module (`notifications.service.ts`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050055
+      }
+    ],
+    "5.3 Build Notification Bell component for top navigation": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050258
+      }
+    ],
+    "5.4 Build Notifications page": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050485
+      }
+    ],
+    "5.5 Implement notification generation triggers/functions": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050664
+      }
+    ],
+    "5.6 Implement overdue badges, dashboard alerts, and overdue filter in the UI": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050842
+      }
+    ],
+    "5.7 Implement SLA target update operation (administrator)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841050991
+      }
+    ],
+    "Checkpoint — Phase 5: Ensure overdue detection, the notification center, and notification generation work. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051141
+      }
+    ],
+    "6.1 Create reports service module (`reports.service.ts`)": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051277
+      }
+    ],
+    "6.2 Build Administrator Dashboard": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051407
+      }
+    ],
+    "6.3 Build Resident Dashboard": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051539
+      }
+    ],
+    "6.4 Build Maintenance Staff Dashboard": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051680
+      }
+    ],
+    "6.5 Implement Recharts visualizations": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051809
+      }
+    ],
+    "6.6 Implement CSV export with basic escaping": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841051947
+      }
+    ],
+    "6.7 Build Reports and Analytics page": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052090
+      }
+    ],
+    "6.8 Document dashboard metric formulas": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052225
+      }
+    ],
+    "Checkpoint — Phase 6: Ensure dashboards render real data, reports work, and CSV export respects authorization. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052368
+      }
+    ],
+    "7.1 Set up Vitest test runner": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052508
+      }
+    ],
+    "7.2 Write authentication tests": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052700
+      }
+    ],
+    "7.3 Write complaint workflow tests": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841052934
+      }
+    ],
+    "7.4 Write security tests for RLS": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053068
+      }
+    ],
+    "7.5 Write unit tests for SLA/overdue, CSV escaping, and form validation": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053252
+      }
+    ],
+    "7.6 Verify no secrets are exposed in the browser bundle": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053394
+      }
+    ],
+    "7.7 Run linting, TypeScript checks, and production build": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053580
+      }
+    ],
+    "Checkpoint — Phase 7: Ensure all tests pass and the production build succeeds. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053750
+      }
+    ],
+    "8.1 Write README.md": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841053992
+      }
+    ],
+    "8.2 Write a beginner-friendly architecture guide": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841054125
+      }
+    ],
+    "8.3 Write setup instructions and a viva explanation guide": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841054264
+      }
+    ],
+    "8.4 Write the final honest implementation report": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841054392
+      }
+    ],
+    "Checkpoint — Phase 8: Ensure documentation describes the actual code and the final report is honest. Ask the user if questions arise.": [
+      {
+        "executionId": "2f6d8924-be20-4706-85c2-43ef18786655",
+        "chatSessionId": "sess_0a2cea20-988c-43d6-a1ac-241d86e04b10",
+        "timestamp": 1792841054525
+      }
+    ]
+  }
+}

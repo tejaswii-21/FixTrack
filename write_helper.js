@@ -1,0 +1,1 @@
+﻿const fs = require("fs"); const path = require("path"); const base = "c:/Users/RAMESH/OneDrive/Documents/FixTrack/src"; function w(p,c){const f=path.join(base,p); fs.mkdirSync(path.dirname(f),{recursive:true}); fs.writeFileSync(f,c,"utf8"); console.log("wrote",f,fs.statSync(f).size);} module.exports={w,base};
